@@ -40,4 +40,4 @@
 
 ### 📜 Licença
 
-- [![NPM](https://img.shields.io/github/license/Gabriek0/christmas-light)](https://github.com/Gabriek0/christmas-lights/blob/main/LICENSE)
+- [![NPM](https://img.shields.io/github/license/Gabriek0/christmas-lights)](https://github.com/Gabriek0/christmas-lights/blob/main/LICENSE)
