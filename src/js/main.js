@@ -1,31 +1,32 @@
-const buttonOn = document.querySelector(".buttonOn");
-const buttonOff = document.querySelector(".buttonOff");
-const buttonRun = document.querySelector(".buttonRun");
-const input = document.querySelector(".inputSpeed");
-const lights = document.querySelector(".light-bulbs");
-const lightBulbs = lights.querySelectorAll(".light-bulb");
+const button_on = document.querySelector(".turnOn");
+const button_off = document.querySelector(".turnOff");
+const buttonInterval = document.querySelector(".buttonInterval");
+const inputInterval = document.querySelector(".inputSpeed");
+const light_bulbs = document.querySelector(".light-bulbs");
+const light_bulb = light_bulbs.querySelectorAll(".light-bulb");
 
-buttonOn.addEventListener("click", (e) => {
-  e.target.classList.toggle("active");
-  lights.classList.add("on");
+button_on.addEventListener("click", () => {
+  light_bulbs.classList.add("on");
 });
 
-buttonOff.addEventListener("click", () => {
-  lights.classList = "light-bulbs";
+button_off.addEventListener("click", () => {
+  light_bulbs.classList.remove("on");
 
-  lightBulbs.forEach((lightBulb) => {
-    lightBulb.style.animationDuration = ``;
+  light_bulb.forEach((lights) => {
+    lights.style.animationDuration = `1s`;
   });
 });
 
-buttonRun.addEventListener("click", () => {
-  let inputSpeed = input.value;
+buttonInterval.addEventListener("click", () => {
+  let inputSpeed = inputInterval.value;
 
   if (inputSpeed <= 5) {
-    lightBulbs.forEach((lightBulb) => {
-      lightBulb.style.animationDuration = `${inputSpeed}s`;
+    light_bulb.forEach((lights) => {
+      lights.style.animationDuration = `${inputSpeed}s`;
     });
   } else {
-    alert("The allowed speed is up to 5");
+    light_bulb.forEach((lights) => {
+      lights.style.animationDuration = `5s`;
+    });
   }
 });
