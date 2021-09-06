@@ -10,7 +10,9 @@
 
 </br>
 
-<p align="center"></p>
+<p align="center">
+  <img src="src/img/christmas-light.gif">
+</p>
 
 </br>
 
