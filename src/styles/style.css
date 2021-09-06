@@ -13,6 +13,7 @@
 
 body {
   font-family: "Roboto" sans-serif;
+  background-color: #000;
 }
 
 @keyframes light-up-color-one {
